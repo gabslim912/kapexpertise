@@ -13,12 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: KAP EXPERTISE
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: KAP EXPERTISE 
+email: contact@kap-expertise.com
+tel: 33 821 32 33
+adresse: 58 rue Galandou Diouf, Dakar Sénégal
+description: Pour faire face à un environnement en permanente évolution, nous avons 
+  développé au fil du temps une culture d’entreprise assurant des valeurs ayant pour 
+  finalité la performance de notre service. 
+meta_description: Pour faire face à un environnement en permanente évolution, nous avons 
+  développé au fil du temps une culture d’entreprise assurant des valeurs ayant pour 
+  finalité la performance de notre service. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
