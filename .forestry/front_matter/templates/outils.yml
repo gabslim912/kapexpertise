@@ -28,3 +28,18 @@ fields:
     name: image
     label: image
     description: Image du document apparaissant sur le site
+- type: text
+  name: layout
+  label: layout
+  default: outils
+  hidden: true
+- type: text
+  name: title
+  label: title
+  default: Outils
+  hidden: true
+- type: text
+  name: permalink
+  label: permalink
+  default: "/outils/"
+  hidden: true
