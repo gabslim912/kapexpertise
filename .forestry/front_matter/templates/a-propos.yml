@@ -37,3 +37,23 @@ fields:
     name: linked_in
     label: Linked in
     default: https://www.linkedin.com/
+- type: field_group_list
+  label: Notre équipe
+  name: members
+  description: Cliquez ici pour ajouter un membre
+  fields:
+  - type: text
+    name: name
+    label: nom
+  - type: text
+    name: job
+    label: fonction
+  - type: textarea
+    name: description
+    label: description
+  - type: file
+    name: image
+    label: photo de profil
+  - type: text
+    name: linked_in
+    label: linked in
