@@ -13,22 +13,28 @@ fields:
   name: image_title
   label: Sous titre de l'image
 - type: field_group_list
-  label: Notre équipe
+  label: Membres
   name: members
   description: Cliquez ici pour ajouter un membre
   fields:
   - type: text
     name: name
     label: nom
+    default: John Doe
   - type: text
     name: job
     label: fonction
+    default: Expert Comtable
   - type: textarea
     name: description
     label: description
+    default: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+      praesentium nulla cupiditate!
   - type: file
     name: image
     label: photo de profil
+    default: "/uploads/team-member.jpg"
   - type: text
     name: linked_in
     label: linked in
+    default: https://www.linkedin.com/
