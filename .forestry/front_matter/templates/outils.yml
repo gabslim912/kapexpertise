@@ -43,3 +43,5 @@ fields:
   label: permalink
   default: "/outils/"
   hidden: true
+pages:
+- outils.md
