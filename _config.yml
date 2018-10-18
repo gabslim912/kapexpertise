@@ -23,6 +23,7 @@ description: Pour faire face à un environnement en permanente évolution, nous 
 meta_description: Pour faire face à un environnement en permanente évolution, nous avons 
   développé au fil du temps une culture d’entreprise assurant des valeurs ayant pour 
   finalité la performance de notre service. 
+logo: /images/logo_kap.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
