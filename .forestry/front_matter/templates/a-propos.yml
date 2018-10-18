@@ -12,31 +12,6 @@ fields:
 - type: text
   name: image_title
   label: Sous titre de l'image
-- type: field_group
-  label: Notre equipe
-  name: members
-  fields:
-  - type: file
-    label: Photo de profil
-    name: image
-    default: "/uploads/team-member.jpg"
-  - type: text
-    label: Nom
-    name: name
-    default: John Doe
-  - type: text
-    label: fonction
-    name: job
-    default: Expert Comptable
-  - type: textarea
-    name: description
-    label: description
-    default: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
-      praesentium nulla cupiditate!
-  - type: textarea
-    name: linked_in
-    label: Linked in
-    default: https://www.linkedin.com/
 - type: field_group_list
   label: Notre équipe
   name: members
