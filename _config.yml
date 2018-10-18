@@ -14,6 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: KAP EXPERTISE 
+collections:
+  services:
+    title: services
+    output: true
+  partenaires:
+    title: partenaires
+    output: true
+  clients:
+    title: clients
+    output: true
 email: contact@kap-expertise.com
 tel: 33 821 32 33
 adresse: 58 rue Galandou Diouf, Dakar Sénégal

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="banner parallax dark-translucent-bg" style="background-image:url('/images/slide-1.jpg'); background-position: 50% 30%;">
+<div class="banner parallax dark-translucent-bg" style="background-image:url('{{ page.image  }}'); background-position: 50% 30%;">
 	<!-- breadcrumb start -->
 	<!-- ================ -->
 	<div class="breadcrumb-container">
@@ -38,8 +38,7 @@ layout: default
 				<div class="separator-2"></div>
 				<div class="row">
 					<div class="col-md-6">
-						<p>Nous accompagnons nos clients en matière d'assistance comptable et de tenue de comptabilité. Cette assistance comptable réunit aussi bien l'aspect comptable, fiscal (déclarations et conseils fiscaux) que l'aspect social (paie du personnel et déclarations sociales). <br>
-						Exalys Audit et Expertise est également un acteur majeur dans l'assistance à la création d'entreprise en proposant notamment des formules adaptées aux besoins et aux spécificités de ses clients. </p>
+						<p>{{ page.about_us }} </p>
 						<ul class="list-icons">
 							<li><i class="icon-check-1"></i> Audit et Comptabilité</li>
 							<li><i class="icon-check-1"></i> Création d'entreprise</li>
@@ -52,10 +51,10 @@ layout: default
 							<img src="/images/slide-2.jpg" alt="">
 							<div class="overlay-bottom hidden-xs">
 								<div class="text">
-									<h3 class="title">Expertise - Audit - Conseil</h3>
+									<h3 class="title">{{ page.image_title }}</h3>
 								</div>
 							</div>
-							<a href="/images/slide-2.jpg" class="popup-img overlay-link" title="image title"><i class="icon-plus-1"></i></a>
+							<a href="{{ page.image }}" class="popup-img overlay-link" title="{{ page.image_title }}"><i class="icon-plus-1"></i></a>
 						</div>
 					</div>
 				</div>
@@ -71,63 +70,26 @@ layout: default
 		<div class="container">
 			<h4 class="title mb-20">Notre <strong>Equipe</strong></h4>
 			<div class="row grid-space-10">
+				{% for member in page.members %}
 				<div class="col-sm-4">
 					<div class="team-member image-box style-2 bordered shadow text-center">
-						<img src="/images/team-member-1.jpg" alt="">
+						<img src="{{ member.image }}" alt="">
 						<div class="body">
-							<h3 class="margin-clear">Radoine Kréaime</h3>
-							<small>Expert Comptable</small>
+							<h3 class="margin-clear">{{ member.name }}</h3>
+							<small>{{ member.job }}</small>
 							<div class="separator mt-10"></div>
-							<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates praesentium nulla cupiditate!</p>
+							<p class="small margin-clear">{{ member.description }}</p>
 							<div class="separator mt-10"></div>
 							<ul class="social-links colored margin-clear">
-								<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+								<li class="linkedin"><a target="_blank" href="{{ member.linkedin }}"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 							<div class="separator mt-10 mb-10"></div>
 							
-							<a href="mailto:info@theproject.com" class="margin-clear btn btn-md-link link-dark"><i class="pr-10 fa fa-envelope-o"></i>Contact</a>
+							<a href="mailto:{{ member.mail }}" class="margin-clear btn btn-md-link link-dark"><i class="pr-10 fa fa-envelope-o"></i>Contact</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4">
-					<div class="team-member image-box style-2 bordered shadow text-center">
-						<img src="/images/team-member-2.jpg" alt="">
-						<div class="body">
-							<h3 class="margin-clear">John Doe</h3>
-							<small>Expert Comptable</small>
-							<div class="separator mt-10"></div>
-							<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates praesentium nulla cupiditate!</p>
-							<div class="separator mt-10"></div>
-							<ul class="social-links colored margin-clear">
-								<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-								
-							</ul>
-							<div class="separator mt-10 mb-10"></div>
-							
-							<a href="mailto:info@theproject.com" class="margin-clear btn btn-md-link link-dark"><i class="pr-10 fa fa-envelope-o"></i>Contact</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="team-member image-box style-2 bordered shadow text-center">
-						<img src="/images/team-member-3.jpg" alt="">
-						<div class="body">
-							<h3 class="margin-clear">Anne Doe</h3>
-							<small>Expert Comptable</small>
-							<div class="separator mt-10"></div>
-							<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates praesentium nulla cupiditate!</p>
-							<div class="separator mt-10"></div>
-							<ul class="social-links colored margin-clear">
-								<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-								
-							</ul>
-							<div class="separator mt-10 mb-10"></div>
-							
-							<a href="mailto:info@theproject.com" class="margin-clear btn btn-md-link link-dark"><i class="pr-10 fa fa-envelope-o"></i>Contact</a>
-						</div>
-					</div>
-				</div>
-			</div>
+				{% endfor %}
 		</div>
 	</div>
 	<!-- section end -->
