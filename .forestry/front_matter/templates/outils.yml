@@ -3,23 +3,28 @@ label: Outils
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: nom
-  label: Nom du document
-  default: Nom du document
-- type: textarea
-  name: description
-  label: description
-  description: Entrez une petite description du document
-- type: text
-  name: type
-  label: type
-  description: Entrez le type correspondant à ce document
-- type: file
-  label: Document à télécharger
-  name: file
-- type: file
-  name: image
-  label: image
-  description: Image du document apparaissant sur le site
-  default: "/uploads/page-about-2.jpg"
+- type: field_group_list
+  label: Documents
+  name: Outils
+  description: Cliquez ici pour ajouter un nouvel outil
+  fields:
+  - type: text
+    label: Nom du document
+    name: name
+    default: Nom du document
+  - type: text
+    label: type
+    name: type
+    description: 'Entrez le type auquel appartient ce document (ex: audit)'
+  - type: textarea
+    label: description
+    description: Entrez une petite description de l'image
+    name: description
+  - type: file
+    name: file
+    label: document
+    description: Cliquez ci-dessous pour uploader le document
+  - type: file
+    name: image
+    label: image
+    description: Image du document apparaissant sur le site
