@@ -1,0 +1,61 @@
+---
+label: Accueil
+hide_body: false
+is_partial: false
+fields:
+- type: field_group_list
+  name: sliders
+  label: Sliders
+  description: Cliquez ci dessous pour ajouter un slider
+  fields:
+  - type: text
+    name: title
+    label: titre
+  - type: textarea
+    name: description
+    label: Description
+  - type: file
+    name: image
+    label: image
+- type: textarea
+  name: mini_descr
+  label: Mini Description
+  description: Texte qui apparaît en dessous de "Bienvenue de chez Kap Expertise"
+- type: number
+  name: clients
+  label: Clients
+- type: number
+  name: experts
+  label: Experts
+- type: textarea
+  name: abous_us
+  label: Qui sommes nous
+- type: file
+  name: image
+  label: image
+- type: textarea
+  name: image_title
+  label: Sous-titre de l'image
+- type: field_group_list
+  name: autres_services
+  label: Autres services
+  fields:
+  - type: text
+    name: title
+    label: Titre
+  - type: textarea
+    name: description
+    label: Description
+  - type: file
+    name: image
+    label: image
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: home
+- type: text
+  label: title
+  name: title
+  hidden: true
+  default: Accueil
