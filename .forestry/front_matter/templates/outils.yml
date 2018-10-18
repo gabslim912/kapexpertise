@@ -16,10 +16,12 @@ fields:
     label: type
     name: type
     description: 'Entrez le type auquel appartient ce document (ex: audit)'
+    default: audit
   - type: textarea
     label: description
     description: Entrez une petite description de l'image
     name: description
+    default: Entrez une petite description de l'image
   - type: file
     name: file
     label: document
@@ -28,6 +30,7 @@ fields:
     name: image
     label: image
     description: Image du document apparaissant sur le site
+    default: "/uploads/page-about-2.jpg"
 - type: text
   name: layout
   label: layout
