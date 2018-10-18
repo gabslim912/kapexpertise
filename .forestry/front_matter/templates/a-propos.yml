@@ -53,3 +53,5 @@ fields:
   label: permalink
   hidden: true
   default: "/about/"
+pages:
+- about.md
