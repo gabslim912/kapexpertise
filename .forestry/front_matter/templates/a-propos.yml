@@ -38,3 +38,18 @@ fields:
     name: linked_in
     label: linked in
     default: https://www.linkedin.com/
+- type: text
+  name: layout
+  label: layout
+  default: about
+  hidden: true
+- type: text
+  name: title
+  label: title
+  default: About
+  hidden: true
+- type: text
+  name: permalink
+  label: permalink
+  hidden: true
+  default: "/about/"
