@@ -59,3 +59,5 @@ fields:
   name: title
   hidden: true
   default: Accueil
+pages:
+- index.md
