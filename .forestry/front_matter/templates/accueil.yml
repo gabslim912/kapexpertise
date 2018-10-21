@@ -27,9 +27,6 @@ fields:
 - type: number
   name: experts
   label: Experts
-- type: textarea
-  name: abous_us
-  label: Qui sommes nous
 - type: file
   name: image
   label: image
