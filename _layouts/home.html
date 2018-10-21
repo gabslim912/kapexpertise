@@ -16,7 +16,7 @@ layout: default
               <br>
               <h1 class="title large"><span class="text-default">Bienvenue chez</span> Kap Expertise</h1>
               <div class="separator"></div>
-              <p class="large">Basé à Paris, notre cabinet est le fruit du regroupement de deux cabinets d’expertise comptable partageant les mêmes valeurs et souhaitant acquérir une taille critique afin de poursuivre leur développement. </p>
+              <p class="large">{{ page.mini_descr }} </p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ layout: default
             <div class="feature-box object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
               <span class="icon without-bg"><i class="fa fa-users"></i></span>
               <h3><strong>Clients</strong></h3>
-              <span class="counter" data-to="1225" data-speed="5000">0</span>
+              <span class="counter" data-to="{{ page.clients }}" data-speed="5000">0</span>
             </div>
           </div>
           
@@ -50,7 +50,7 @@ layout: default
             <div class="feature-box object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
               <span class="icon without-bg"><i class="fa fa-users"></i></span>
               <h3><strong>Experts</strong></h3>
-              <span class="counter" data-to="150" data-speed="5000">0</span>
+              <span class="counter" data-to="{{ page.experts }}" data-speed="5000">0</span>
             </div>
           </div>
         </div>
@@ -75,14 +75,7 @@ layout: default
 
               <div class="row">
                 <div class="col-md-6">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Suspendisse aliquet imperdiet commodo. Aenean vel lacinia elit. Class aptent taciti sociosqu ad litora torquent per.</p>
-                  <p>Sed eget pulvinar quam, vel feugiat enim. Aliquam erat volutpat. Phasellus eu porta ipsum. Suspendisse aliquet imperdiet commodo. Aenean vel lacinia elit. Class aptent taciti sociosqu ad litora torquent per. Vestibulum velmo.</p>
-                  <ul class="list-icons">
-                    <li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i> Etiam sed dolor ac diam volutpat</li>
-                    <li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i> Sed eget pulvinar quam, vel feugiat enim aliquam </li>
-                    <li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="150"><i class="icon-check"></i> Erat volutpat. Phasellus eu porta ipsum suspendisse aliquet imperdiet</li>
-                    
-                  </ul>
+                 {{ page.content }}
                 </div>
 
                 <!-- sidebar start -->
@@ -90,11 +83,11 @@ layout: default
                 <aside class="sidebar col-md-6">
                   
                   <div class="overlay-container overlay-visible">
-                  <img src="images/slide-2.jpg" alt="">
-                  <a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
+                  <img src="{{ page.image }}" alt="">
+                  <a href="/about" class="overlay-link"><i class="fa fa-link"></i></a>
                   <div class="overlay-bottom hidden-xs">
                     <div class="text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis sunt, quae alias impedit ea molestias recusandae.
+                      {{ page.image_title }}
                     </div>
                   </div>            
                 </aside>
@@ -115,67 +108,33 @@ layout: default
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h2 class="text-center">Nos Principaux <strong>Services</strong></h2>
-              
-              
             </div>
+            {% for service in page.autres_services %}
             <div class="col-sm-4">
               <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
                 <div class="overlay-container overlay-visible">
-                  <img src="images/service-1.jpg" alt="">
-                  <a href="images/service-1.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
+                  <img src="{{ service.image }}" alt="{{ service.title }}">
+                  <a href="{{ service.image }}" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
                   <div class="overlay-bottom hidden-xs">
                     <div class="text">
-                      <p class="lead margin-clear text-left">Expertise comptable</p>
+                      <p class="lead margin-clear text-left">{{ service.title }}</p>
                     </div>
                   </div>
                 </div>
                 <div class="body padding-horizontal-clear">
-                  <p>Nous proposons à nos clients plusieurs solutions pour effectuer la tenue comptable, chaque situation étant différente, nous vous aidons à rechercher la solution la mieux adaptée à vos besoins.</p>
-                  <a href="#" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">En savoir plus<i class="fa fa-arrow-right pl-10"></i></a>
+                  <p>{{ service.description }}</p>
+                  <a href="/services" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">En savoir plus<i class="fa fa-arrow-right pl-10"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-                <div class="overlay-container overlay-visible">
-                  <img src="images/service-2.jpg" alt="">
-                  <a href="images/service-2.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
-                  <div class="overlay-bottom hidden-xs">
-                    <div class="text">
-                      <p class="lead margin-clear text-left">Audit</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="body padding-horizontal-clear">
-                  <p>Les outils d'audit dont dispose le cabinet et l'expérience de nos collaborateurs assurent à nos clients la réalisation des missions de commissariat aux comptes dans le respect des diligences à accomplir. </p>
-                  <a href="#" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">En savoir plus<i class="fa fa-arrow-right pl-10"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-                <div class="overlay-container overlay-visible">
-                  <img src="images/service-3.jpg" alt="">
-                  <a href="images/service-3.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
-                  <div class="overlay-bottom hidden-xs">
-                    <div class="text">
-                      <p class="lead margin-clear text-left">Conseil</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="body padding-horizontal-clear">
-                  <p>Afin d'accompagner chaque entrepreneur et de le faciliter dans sa démarche de création d'entreprise, Kap Expertise propose aux futurs gérants ou dirigeants un package créateur d'entreprise.</p>
-                  <a href="#" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">En savoir plus<i class="fa fa-arrow-right pl-10"></i></a>
-                </div>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </section>
       <!-- section end -->
 
       <!-- section start -->
-      <!-- ================ -->
+      <!-- ================ --
       <section class="section dark-translucent-bg parallax background-img-1">
         <div class="container">
           <div class="row">
@@ -199,7 +158,7 @@ layout: default
       <!-- section end -->
 
       <!-- section -->
-      <!-- ================ -->
+      <!-- ================ --
       <section class="pv-30">
         <div class="container">
           <div class="row">

@@ -2,7 +2,7 @@
 title: Outils
 permalink: "/outils/"
 layout: outils
-Outils:
+outils:
 - name: Nom du document
   type: audit
   description: Entrez une petite description de l'image
