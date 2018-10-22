@@ -4,6 +4,16 @@ auto_deploy: true
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: directory
+  path: _clients
+  label: Clients
+  create: all
+  match: "**/*"
+- type: directory
+  path: _partenaires
+  label: Partenaires
+  create: all
+  match: "**/*"
 - type: jekyll-posts
   label: Posts
   create: all
