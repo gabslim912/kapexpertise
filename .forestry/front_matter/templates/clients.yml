@@ -22,3 +22,5 @@ fields:
   name: image
   label: photo de profil
   default: "/uploads/testimonial-2.jpg"
+pages:
+- _clients/sdft.md
