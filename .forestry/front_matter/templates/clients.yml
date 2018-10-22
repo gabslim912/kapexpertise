@@ -15,9 +15,6 @@ fields:
 - type: text
   name: titre
   label: titre du commentaire
-- type: textarea
-  name: text
-  label: texte du commentaire
 - type: file
   name: image
   label: photo de profil
