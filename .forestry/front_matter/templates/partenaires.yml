@@ -7,4 +7,5 @@ fields:
   name: image
   label: logo de la société
 pages:
+- _partenaires/sfhj.md
 - _partenaires/sdft.md
