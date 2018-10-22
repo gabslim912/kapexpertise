@@ -3,24 +3,22 @@ label: Clients
 hide_body: false
 is_partial: false
 fields:
-- type: field_group_list
-  name: clients
-  label: Clients
-  description: cliquez ici pour ajouter un nouveau client
-  fields:
-  - type: text
-    name: name
-    label: Nom du client
-  - type: text
-    name: company
-    label: Nom de la société
-  - type: text
-    name: title
-    label: Titre du commentaire
-  - type: textarea
-    name: text
-    label: Texte du commentaire
-  - type: file
-    name: image
-    label: Photo de profil
-    default: "/uploads/testimonial-2.jpg"
+- type: text
+  name: company
+  label: Nom de la société
+- type: text
+  name: name
+  label: nom du représentant
+- type: text
+  name: job
+  label: poste du représentant
+- type: text
+  name: title
+  label: titre du commentaire
+- type: textarea
+  name: text
+  label: texte du commentaire
+- type: file
+  name: image
+  label: photo de profil
+  default: "/uploads/testimonial-2.jpg"
