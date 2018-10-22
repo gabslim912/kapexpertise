@@ -6,8 +6,8 @@
 		if ($("#map-canvas").length>0) {
 			var map, myLatlng, myZoom, marker;
 			// Set the coordinates of your location
-			myLatlng = new google.maps.LatLng(41.38791700, 2.16991870);
-			myZoom = 12;
+			myLatlng = new google.maps.LatLng(14.6725693, -17.4387355,17);
+			myZoom = 18;
 			function initialize() {
 				var mapOptions = {
 					zoom: myZoom,

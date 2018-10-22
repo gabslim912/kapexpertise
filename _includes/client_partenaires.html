@@ -1,0 +1,36 @@
+
+<div class="owl-carousel content-slider space-top">
+  {% for client in site.clients %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="testimonial text-center">
+          <div class="testimonial-image">
+            <img src="{{ client.image }}" alt="{{ client.title }}" title="{{ client.title }}" class="img-circle">
+          </div>
+          <h3>{{ client.titre }}</h3>
+          <div class="separator"></div>
+          <div class="testimonial-body">
+            <blockquote>
+              <p>{{ client.content }}</p>
+            </blockquote>
+            <div class="testimonial-info-1">{{ client.name }} - {{ client.job }}</div>
+            <div class="testimonial-info-2"><b>{{ client.company }}</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="container">
+  <div class="clients-container">
+    <div class="clients">
+    	{% for partenaire in site.partenaires %}
+      <div class="client-image object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+        <a href="#"><img src="{{ partenaire.image }}" alt="{{ partenaire.title }}"></a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
