@@ -9,3 +9,5 @@ fields:
 - type: file
   name: image
   label: logo de la société
+pages:
+- _partenaires/sdft.md
