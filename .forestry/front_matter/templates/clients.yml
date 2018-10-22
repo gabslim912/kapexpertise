@@ -13,7 +13,7 @@ fields:
   name: job
   label: poste du représentant
 - type: text
-  name: title
+  name: titre
   label: titre du commentaire
 - type: textarea
   name: text
