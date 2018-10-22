@@ -3,10 +3,6 @@ label: Clients
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: name
-  label: Nom
-  description: Nom du client
 - type: field_group_list
   name: clients
   label: Clients
