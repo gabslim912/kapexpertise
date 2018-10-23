@@ -11,15 +11,17 @@ sliders:
     avons développé au fil du temps une culture d’entreprise <br>assurant des valeurs
     ayant pour finalité la performance <br>de notre service.
   image: "/uploads/slide-2.jpg"
-mini_descr: Basé à Paris, notre cabinet est le fruit du regroupement de deux cabinets
-  d’expertise comptable partageant les mêmes valeurs et souhaitant acquérir une taille
-  critique afin de poursuivre leur développement.
+mini_descr: |-
+  Situé en plein cœur de Dakar, Kap Expertise est conçue afin de s'adapter à l'ensemble des acteurs de
+  la finance quel que soit leurs tailles et leurs secteurs d'activités.
 clients: 1200
 experts: 20
 abous_us: ''
 image: "/uploads/slide-2.jpg"
-image_title: 'Sed eget pulvinar quam, vel feugiat enim. Aliquam erat volutpat. Phasellus
-  eu porta ipsum. '
+image_title: |-
+  Chacun de nos clients a un interlocuteur privilégié qui répond à ses attentes et le conseil. Possédant
+  une excellente connaissance du dossier, il se forme régulièrement afin d’être toujours au fait des
+  évolutions impactant leur gestion.
 autres_services:
 - title: Expertise comptable
   description: Nous proposons à nos clients plusieurs solutions pour effectuer la
@@ -38,18 +40,16 @@ autres_services:
   image: "/uploads/service-3.jpg"
 
 ---
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Suspendisse aliquet imperdiet commodo. Aenean vel lacinia elit. Class aptent taciti sociosqu ad litora torquent per.</p>
+<p>Créé en 201X, KAP EXPERTISE est un cabinet d&#39;expertise comptable et de commissariat aux comptes
 
-  <p>Sed eget pulvinar quam, vel feugiat enim. Aliquam erat volutpat. Phasellus eu porta ipsum. Suspendisse aliquet imperdiet commodo. Aenean vel lacinia elit. Class aptent taciti sociosqu ad litora torquent per. Vestibulum velmo.</p>
+inscrit à l'Ordre des Experts Comptables du Sénégal ONECCA (Ordre National Des Experts Comptables
 
-  <ul class="list-icons">
+et des Comptables Agréés du Sénégal).
 
-  <li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i> Etiam sed dolor ac diam volutpat</li>
+Son fondateur Radoine Kreaime est…………… (Expérience)…………… (Diplôme)……………………….</p>
 
-  <li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="icon-check"></i> Sed eget pulvinar quam, vel feugiat enim aliquam </li>
+<ul class="list-icons">
 
-  <li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="150"><i class="icon-check"></i> Erat volutpat. Phasellus eu porta ipsum suspendisse aliquet imperdiet</li>
+<li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i>Composé d’une équipe d’une dizaine de collaborateurs multiculturels, disponibles et à votre écoute, nous développons au quotidien des valeurs qui régissent la profession d'expert-comptable et de commissaires aux comptes : Proximité, Confidentialité, Réactivité, Dynamisme, Efficacité.</li>
 
-    
-
-  </ul>
+</ul>
