@@ -40,7 +40,7 @@ autres_services:
   image: "/uploads/conseil2.jpg"
 
 ---
-<p>Créé en 201X, KAP EXPERTISE est un cabinet d&#39;expertise comptable et de commissariat aux comptes
+<p>Créé en 201X, KAP EXPERTISE est un cabinet d'expertise comptable et de commissariat aux comptes
 
 inscrit à l'Ordre des Experts Comptables du Sénégal ONECCA (Ordre National Des Experts Comptables
 
@@ -48,8 +48,4 @@ et des Comptables Agréés du Sénégal).
 
 Son fondateur Radoine Kreaime est…………… (Expérience)…………… (Diplôme)……………………….</p>
 
-<ul class="list-icons">
-
-<li class="object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall"><i class="icon-check"></i>Composé d’une équipe d’une dizaine de collaborateurs multiculturels, disponibles et à votre écoute, nous développons au quotidien des valeurs qui régissent la profession d'expert-comptable et de commissaires aux comptes : Proximité, Confidentialité, Réactivité, Dynamisme, Efficacité.</li>
-
-</ul>
+* Composé d’une équipe d’une dizaine de collaborateurs multiculturels, disponibles et à votre écoute, nous développons au quotidien des valeurs qui régissent la profession d'expert-comptable et de commissaires aux comptes : Proximité, Confidentialité, Réactivité, Dynamisme, Efficacité
