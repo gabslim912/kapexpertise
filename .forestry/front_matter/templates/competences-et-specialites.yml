@@ -12,6 +12,7 @@ fields:
   name: layout
   label: layout
   default: services
+  hidden: true
 - type: textarea
   name: competences
   label: compétences
