@@ -10,5 +10,6 @@ fields:
   name: image
   label: image
 pages:
+- _services/juridique-et-social.md
 - _services/expertise-comptable.md
 - _services/audit.md
