@@ -10,4 +10,5 @@ fields:
   name: image
   label: image
 pages:
+- _services/expertise-comptable.md
 - _services/audit.md
