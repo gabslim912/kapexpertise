@@ -27,17 +27,17 @@ autres_services:
   description: Nous proposons à nos clients plusieurs solutions pour effectuer la
     tenue comptable, chaque situation étant différente, nous vous aidons à rechercher
     la solution la mieux adaptée à vos besoins.
-  image: "/uploads/service-1.jpg"
+  image: "/uploads/comptable2.jpg"
 - title: Audit
   description: Les outils d'audit dont dispose le cabinet et l'expérience de nos collaborateurs
     assurent à nos clients la réalisation des missions de commissariat aux comptes
     dans le respect des diligences à accomplir.
-  image: "/uploads/service-2.jpg"
+  image: "/uploads/audit2.jpg"
 - title: Conseil
   description: Afin d'accompagner chaque entrepreneur et de le faciliter dans sa démarche
     de création d'entreprise, Kap Expertise propose aux futurs gérants ou dirigeants
     un package créateur d'entreprise.
-  image: "/uploads/service-3.jpg"
+  image: "/uploads/conseil2.jpg"
 
 ---
 <p>Créé en 201X, KAP EXPERTISE est un cabinet d&#39;expertise comptable et de commissariat aux comptes
