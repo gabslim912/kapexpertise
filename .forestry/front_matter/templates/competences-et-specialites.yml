@@ -1,0 +1,20 @@
+---
+label: Compétences et spécialités
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: permalink
+  label: Permalink
+  default: "/services/"
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  default: services
+- type: textarea
+  name: competences
+  label: compétences
+- type: textarea
+  name: methodologie
+  label: méthodologie
