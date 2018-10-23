@@ -27,88 +27,50 @@ layout: default
 <!-- banner end -->
 <!-- main-container start -->
 <!-- ================ -->
-<!-- section start -->
+<section class="main-container">
+
+	<div class="container">
+		<div class="row">
+
+			<!-- main start -->
 			<!-- ================ -->
-			<section>
-				<div class="container">
-					<!-- isotope filters start -->
-					<div class="filters">
-						<ul class="nav nav-pills">
-							<li class="active"><a href="#" data-filter="*">Tous</a></li>
-							<li><a href="#" data-filter=".expertise">Expertise</a></li>
-							<li><a href="#" data-filter=".audit">Audit</a></li>
-							<li><a href="#" data-filter=".conseil">Conseil</a></li>
-						</ul>
+			<div class="main col-md-12">
+
+				
+				<p class="lead">Vous pouvez trouver ci-dessous la liste de nos documents téléchargeable</p>
+				<div class="separator"></div>
+				{% for outil in page.outils %}
+				<div class="image-box style-3-b">
+					<div class="row">
+						<div class="col-sm-3 col-md-2 col-lg-2">
+							<div class="overlay-container">
+								<img src="{{ outil.image }}" alt="{{ outil.name }}" style="width: 225px; height: 143px;">
+								<div class="overlay-to-top">
+									<p class="small margin-clear"><em>{{ outil.name }}</em></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-md-4 col-lg-4">
+							<div class="body">
+								<h3 class="title"><a href="{{ outil.docpdf }}">{{ outil.name }}</a></h3>
+								<p class="small mb-10"><i class="pl-10 icon-tag-1"></i> {{ outil.type }}</p>
+								<div class="separator-2"></div>
+								<p class="mb-10">{{ outil.description }}</p>
+								<a href="{{ outil.docpdf }}" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">Télécharger le document<i class="fa fa-arrow-right pl-10"></i></a>
+							</div>
+						</div>
 					</div>
-					<!-- isotope filters end -->
 				</div>
-				<div class="isotope-container row grid-space-0">
-					
-					<div class="col-sm-6 col-md-4 isotope-item expertise">
-						{% for outil in page.outils | where:"type", "expertise" %}
-						<div class="image-box text-center">
-							<div class="overlay-container">
-								<img src="{{ outil.image }}" alt="">
-								<div class="overlay-top">
-									<div class="text">
-										<h3>{{ outil.name }}</h3>
-										<p class="small">{{ outil.description }}</p>
-									</div>
-								</div>
-								<div class="overlay-bottom">
-									<div class="links">
-										<a href="{{ outil.document }}" class="btn btn-gray-transparent btn-animated btn-sm">Télécharger <i class="pl-10 fa fa-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-					<div class="col-sm-6 col-md-4 isotope-item audit">
-						{% for outil in page.outils | where:"type", "audit" %}
-						<div class="image-box text-center">
-							<div class="overlay-container">
-								<img src="{{ outil.image }}" alt="">
-								<div class="overlay-top">
-									<div class="text">
-										<h3>{{ outil.name }}</h3>
-										<p class="small">{{ outil.description }}</p>
-									</div>
-								</div>
-								<div class="overlay-bottom">
-									<div class="links">
-										<a href="{{ outil.document }}" class="btn btn-gray-transparent btn-animated btn-sm">Télécharger <i class="pl-10 fa fa-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-					<div class="col-sm-6 col-md-4 isotope-item conseil">
-						{% for outil in page.outils | where:"type", "conseil" %}
-						<div class="image-box text-center">
-							<div class="overlay-container">
-								<img src="{{ outil.image }}" alt="">
-								<div class="overlay-top">
-									<div class="text">
-										<h3>{{ outil.name }}</h3>
-										<p class="small">{{ outil.description }}</p>
-									</div>
-								</div>
-								<div class="overlay-bottom">
-									<div class="links">
-										<a href="{{ outil.document }}" class="btn btn-gray-transparent btn-animated btn-sm">Télécharger <i class="pl-10 fa fa-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-					
-				</div>
-			</section>
-			<!-- section end -->
+				<div class="separator"></div>
+				{% endfor %}
+			</div>
+			<!-- main end -->
+
+		</div>
+	</div>
+</section>
 <!-- main-container end -->
+
  <!-- section start -->
 <!-- ================ -->
 <section class="pv-40 padding-bottom-clear dark-translucent-bg hovered background-img-1">

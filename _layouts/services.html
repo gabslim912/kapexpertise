@@ -8,7 +8,7 @@ layout: default
 	<div class="breadcrumb-container">
 		<div class="container">
 			<ol class="breadcrumb">
-				<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="/">Home</a></li>
+				<li><i class="fa fa-home pr-10"></i><a class="link-dark" href="/">Accueil</a></li>
 				<li class="active">Compétences & Spécialités</li>
 			</ol>
 		</div>
@@ -38,117 +38,74 @@ layout: default
 			<div class="main col-md-12">
 				<!-- page-title start -->
 				<!-- ================ -->
-				<h1 class="page-title text-center">Nos <strong>Services</strong></h1>
+				<h1 class="page-title text-center">Compétences & Méthodologie</h1>
 				<div class="separator"></div>
 				<br>
 				<!-- page-title end -->
-				
 				<div class="row">
-					<div class="col-sm-4">
-						<div class="image-box style-2 mb-20">
-							<div class="overlay-container overlay-visible">
-								<img src="/images/service-1.jpg" alt="">
-								<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
-								<div class="overlay-bottom hidden-xs">
-									<div class="text">
-										<p class="lead margin-clear text-left">Service One</p>
+					<div class="col-sm-12">
+						<div class="vertical">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active"><a href="#vtab1" role="tab" data-toggle="tab"><i class="fa fa-magic pr-10"></i> Compétences</a></li>
+									<li><a href="#vtab2" role="tab" data-toggle="tab"><i class="fa fa-life-saver pr-10"></i> Méthodologie</a></li>
+									
+								</ul>
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="vtab1">
+										<h3 class="title">Compétences</h3>
+										<p>Chaque situation étant différente, nous vous aidons à rechercher la solution la mieux adaptée à vos besoins et à votre structure en mettant en avant nos compétences suivantes :</p> <br>
+										<ul class="list-icons">
+											<li><i class="icon-check pr-10"></i> Des outils adaptés,</li>
+											<li><i class="icon-check pr-10"></i> Une expérience acquise dans de nombreux domaines et secteurs d'activités,</li>
+											<li><i class="icon-check pr-10"></i> Une étroite collaboration avec nos clients,</li>
+											<li><i class="icon-check pr-10"></i> Une personnalisation de notre offre en fonction de chaque demande et de chaque client.</li>
+										</ul>
+										<a href="/contact" class="btn btn-default">Contactez-nous</a>
 									</div>
+									<div class="tab-pane fade" id="vtab2">
+										<h3 class="title">Méthodologie</h3>
+										<p>Notre première approche consistera à évaluer vos besoins et vos attentes lors d’un entretien physique pour ainsi définir les travaux à effectuer et à la méthodologie de travail. <br> A l'issu de cet entretien une lettre de mission renseignant les modalités d’intervention, le contenu de la mission et nos différentes obligations vous sera transmise.</p>
+										<a href="/contact" class="btn btn-default">Contactez-nous</a>
+									</div>
+									
 								</div>
 							</div>
-							<div class="body padding-horizontal-clear">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
-								<a class="link-dark" href="page-services.html">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="image-box style-2 mb-20">
-							<div class="overlay-container overlay-visible">
-								<img src="/images/service-2.jpg" alt="">
-								<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
-								<div class="overlay-bottom hidden-xs">
-									<div class="text">
-										<p class="lead margin-clear text-left">Service Two</p>
-									</div>
-								</div>
-							</div>
-							<div class="body padding-horizontal-clear">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
-								<a class="link-dark" href="page-services.html">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="image-box style-2 mb-20">
-							<div class="overlay-container overlay-visible">
-								<img src="/images/service-3.jpg" alt="">
-								<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
-								<div class="overlay-bottom hidden-xs">
-									<div class="text">
-										<p class="lead margin-clear text-left">Service Three</p>
-									</div>
-								</div>
-							</div>
-							<div class="body padding-horizontal-clear">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
-								<a class="link-dark" href="page-services.html">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="row">
+				<!-- page-title start -->
+				<!-- ================ -->
+				<h1 class="page-title text-center">Nos services</h1>
+				<div class="separator"></div>
+				<br>
+				</div>
+				<div class="row">
+				<!-- page-title end -->
+				{% for service in site.services %}
 					<div class="col-sm-4">
-						<div class="image-box style-2 mb-20">
+						<div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
 							<div class="overlay-container overlay-visible">
-								<img src="/images/service-4.jpg" alt="">
+								<img src="{{ service.image }}" alt="" style="width: 360px; height: 215px;">
 								<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
 								<div class="overlay-bottom hidden-xs">
 									<div class="text">
-										<p class="lead margin-clear text-left">Service Four</p>
+										<p class="lead margin-clear text-left">{{ service.title }}</p>
 									</div>
 								</div>
 							</div>
 							<div class="body padding-horizontal-clear">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
-								<a class="link-dark" href="page-services.html">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
+								<div style="width: 328px; height: 125px;">
+									<p class="text-justify">{{ service.mini_desc }}</p>
+								</div>								
+								<a class="link-dark" href="{{ service.url }}">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4">
-						<div class="image-box style-2 mb-20">
-							<div class="overlay-container overlay-visible">
-								<img src="/images/service-5.jpg" alt="">
-								<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
-								<div class="overlay-bottom hidden-xs">
-									<div class="text">
-										<p class="lead margin-clear text-left">Service Five</p>
-									</div>
-								</div>
-							</div>
-							<div class="body padding-horizontal-clear">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
-								<a class="link-dark" href="page-services.html">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="image-box style-2 mb-20">
-							<div class="overlay-container overlay-visible">
-								<img src="/images/service-6.jpg" alt="">
-								<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
-								<div class="overlay-bottom hidden-xs">
-									<div class="text">
-										<p class="lead margin-clear text-left">Service Six</p>
-									</div>
-								</div>
-							</div>
-							<div class="body padding-horizontal-clear">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
-								<a class="link-dark" href="page-services.html">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>	
+				{% endfor %}
+				</div>
+				
 			</div>
 			<!-- main end -->
 

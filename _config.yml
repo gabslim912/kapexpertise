@@ -35,6 +35,7 @@ meta_description: Pour faire face à un environnement en permanente évolution, 
   développé au fil du temps une culture d’entreprise assurant des valeurs ayant pour 
   finalité la performance de notre service. 
 logo: /images/logo_kap3.png
+paralax: /uploads/slide-2.jpg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
