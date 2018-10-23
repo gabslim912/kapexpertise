@@ -42,7 +42,7 @@ layout: default
 				{% for outil in page.outils %}
 				<div class="image-box style-3-b">
 					<div class="row">
-						<div class="col-sm-3 col-md-2 col-lg-2">
+						<div class="col-sm-4 col-md-4 col-lg-3">
 							<div class="overlay-container">
 								<img src="{{ outil.image }}" alt="{{ outil.name }}" style="width: 225px; height: 143px;">
 								<div class="overlay-to-top">
@@ -50,13 +50,13 @@ layout: default
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 col-md-4 col-lg-4">
+						<div class="col-sm-8 col-md-8 col-lg-9">
 							<div class="body">
 								<h3 class="title"><a href="{{ outil.docpdf }}">{{ outil.name }}</a></h3>
 								<p class="small mb-10"><i class="pl-10 icon-tag-1"></i> {{ outil.type }}</p>
 								<div class="separator-2"></div>
-								<p class="mb-10">{{ outil.description }}</p>
-								<a href="{{ outil.docpdf }}" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear">Télécharger le document<i class="fa fa-arrow-right pl-10"></i></a>
+								<p class="mb-10 text-justify">{{ outil.description }}</p>
+								<a href="{{ outil.docpdf }}" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear" target="blank">Télécharger le document<i class="fa fa-arrow-right pl-10"></i></a>
 							</div>
 						</div>
 					</div>
