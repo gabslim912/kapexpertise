@@ -15,6 +15,8 @@ methodologie: "<p>Notre première approche consistera à évaluer vos besoins et
   attentes lors d’un entretien physique pour ainsi définir les travaux à effectuer
   et à la méthodologie de travail. <br> A l'issu de cet entretien une lettre de mission
   renseignant les modalités d’intervention, le contenu de la mission et nos différentes
-  obligations vous sera transmise.</p>"
+  obligations vous sera transmise.</p>\n<ul class=\"list-icons\">\n\t\t\t\t\t\t\t\t\t\t\t<li><i
+  class=\"icon-check pr-10\"></i> SAGE PAIE ET RH</li>\n\t\t\t\t\t\t\t\t\t\t\t<li><i
+  class=\"icon-check pr-10\"></i> SAGE COMPTABILITÉ</li>\n\n\t\t\t\t\t\t\t\t\t\t</ul>"
 
 ---
