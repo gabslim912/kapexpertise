@@ -8,11 +8,19 @@ mini_desc: |-
 image: "/uploads/conseil2.jpg"
 
 ---
-Nous réalisons l’ensemble des travaux en lien avec le suivi social de votre structure:
+Nous réalisons l’ensemble des travaux en lien avec le suivi social de votre structure.
 
-* Gestion de la paie
-* Etablissement de toutes les déclarations sociales
-* Etablissement des contrats
-* Gestion de la problématique liée au droit du travail……
-* Et assurons également un suivi juridique de votre entreprise :
-* Choix de la forme juridique……
+Concernant les missions juridiques, nous intervenons pour :
+
+* Le choix de la forme juridique adéquate en fonction de la nature de l’activité,
+* Le choix du Régime Fiscal,
+* L'accompagnement dans les démarches de demande d’agréments (APIX – Code des investissements, EFE, BMN, etc…),
+* La mise en place Business plan et demande de financement,
+* La restructuration juridique,
+
+Et enfin, pour les missions juridiques, nous intervenons pour :
+
+* L'établissement et contrôle des déclarations fiscales,
+* Les études fiscales spécifiques,
+* L'assistance en cas de vérification par les administrations fiscales....
+* L'optimisation
