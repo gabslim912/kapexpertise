@@ -10,6 +10,7 @@ fields:
   name: image
   label: image
 pages:
+- _services/audit.md
 - _services/formation-et-de-sensibilisation.md
 - _services/missions-d-organisation.md
 - _services/missions-sociales.md
@@ -17,4 +18,3 @@ pages:
 - _services/conseil-en-gestion.md
 - _services/juridique-et-fiscal.md
 - _services/expertise-comptable.md
-- _services/audit.md
