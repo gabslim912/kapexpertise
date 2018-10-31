@@ -11,6 +11,5 @@ fields:
   label: image
 pages:
 - _services/juridique-et-fiscal.md
-- _services/juridique-et-social.md
 - _services/expertise-comptable.md
 - _services/audit.md
