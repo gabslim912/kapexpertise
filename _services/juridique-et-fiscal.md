@@ -6,7 +6,6 @@ mini_desc: |-
   , l'établissement de toutes les déclarations sociales
   ect...
 image: "/uploads/conseil2.jpg"
-published: false
 
 ---
 Nous réalisons l’ensemble des travaux en lien avec le suivi social de votre structure:
