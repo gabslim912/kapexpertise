@@ -111,24 +111,43 @@ layout: default
             </div>
             {% for service in site.services %}
             <div class="col-sm-4">
-            <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
-              <div class="overlay-container overlay-visible">
-                <img src="{{ service.image }}" alt="" style="width: 360px; height: 215px;">
-                <a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
-                <div class="overlay-bottom hidden-xs">
-                  <div class="text">
-                    <p class="lead margin-clear text-left">{{ service.title }}</p>
+              <div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
+                <div class="overlay-container overlay-visible">
+                  <img src="{{ service.image }}" alt="" style="width: 360px; height: 215px;">
+                  <a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
+                  <div class="overlay-bottom hidden-xs">
+                    <div class="text">
+                      <p class="lead margin-clear text-left">{{ service.title }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="body padding-horizontal-clear">
+                  <div style="width: 328px; height: 125px;">
+                    <p class="text-justify">{{ service.mini_desc | slice: 0, 210 }}</p>
+                  </div>                
+                  <button class="btn btn-default" data-toggle="modal" data-target="#myModal{{ forloop.index }}">En savoir plus</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+  
+            <div class="modal fade" id="myModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{ service.title }}</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>{{ service.content }}</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-dark" data-dismiss="modal">Fermer</button>
+                    
                   </div>
                 </div>
               </div>
-              <div class="body padding-horizontal-clear">
-                <div style="width: 328px; height: 125px;">
-                  <p class="text-justify">{{ service.mini_desc | slice: 0, 210 }}</p>
-                </div>                
-                <a class="link-dark" href="{{ service.url }}">En savoir plus<i class="pl-5 fa fa-angle-double-right"></i></a>
-              </div>
             </div>
-          </div>
             {% endfor %}
           </div>
         </div>

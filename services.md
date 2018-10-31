@@ -20,10 +20,11 @@ methodologie: "<p>Notre première approche consistera à évaluer vos besoins et
   class=\"icon-check pr-10\"></i> SAGE COMPTABILITÉ</li>\n\n\t\t\t\t\t\t\t\t\t\t</ul>"
 
 ---
-* Secteur Immobilier
-* Commerce de gros et détails
-* BTP
-* Sociétés de Services
-* Professions libérales (médecins, Pharmaciens, Avocats, etc…)
-* Sociétés agricoles
-* Assurance…
+<p>Nous intervenons dans différents secteurs d'activité notamment:</p>
+<li><i class=\"icon-check pr-10\"></i> Pour le Secteur Immobilier</li>
+<li><i class=\"icon-check pr-10\"></i> Pour le secteur du Commerce de gros et détails</li>
+<li><i class=\"icon-check pr-10\"></i> Dans le BTP</li>
+<li><i class=\"icon-check pr-10\"></i> Pour les sociétés de Services</li>
+<li><i class=\"icon-check pr-10\"></i> Pour les professions libérales (médecins, Pharmaciens, Avocats, etc…)</li>
+<li><i class=\"icon-check pr-10\"></i> Pour les sociétés agricoles</li>
+<li><i class=\"icon-check pr-10\"></i> Pour le secteur d'assurance</li>
