@@ -12,14 +12,13 @@ sliders:
     ayant pour finalité la performance <br>de notre service.
   image: "/uploads/slide-2.jpg"
 mini_descr: |-
-  Situé en plein cœur de Dakar, Kap Expertise est conçue afin de s'adapter à l'ensemble des acteurs de
-  la finance quel que soit leurs tailles et leurs secteurs d'activités.
+  Basé à Dakar, Kap Expertise à pour but d'accompagner ses clients dans la mise en place d’outils de pilotage utiles à une bonne
+  gestion de leur entreprise.
 clients: 1200
 experts: 20
 abous_us: ''
 image: "/uploads/slide-2.jpg"
-image_title: |-
-  Expertise - Audit - Conseil
+image_title: Expertise - Audit - Conseil
 autres_services:
 - title: Expertise comptable
   description: Nous proposons à nos clients plusieurs solutions pour effectuer la
