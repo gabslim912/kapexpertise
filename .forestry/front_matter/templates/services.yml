@@ -10,7 +10,7 @@ fields:
   name: image
   label: image
 pages:
-- _services/commissariat-aux-comptes.md
 - _services/juridique-et-fiscal.md
+- _services/commissariat-aux-comptes.md
 - _services/expertise-comptable.md
 - _services/audit.md

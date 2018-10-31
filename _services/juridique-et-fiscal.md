@@ -2,8 +2,7 @@
 title: Juridique et Fiscal
 date: 2018-10-23 13:47:30 +0000
 mini_desc: |-
-  Nous réalisons l’ensemble des travaux en lien avec le suivi social de votre structure i.e. la gestion de la paie
-  , l'établissement de toutes les déclarations sociales
+  Nous réalisons l’ensemble des travaux en lien avec le suivi social de votre structure i.e. la gestion de la paie, l'établissement de toutes les déclarations sociales
   ect...
 image: "/uploads/conseil2.jpg"
 
