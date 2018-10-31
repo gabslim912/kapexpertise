@@ -10,6 +10,7 @@ fields:
   name: image
   label: image
 pages:
+- _services/formation-et-de-sensibilisation.md
 - _services/missions-d-organisation.md
 - _services/conseil-en-gestion.md
 - _services/juridique-et-fiscal.md
