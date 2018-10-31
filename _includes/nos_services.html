@@ -1,0 +1,52 @@
+<div class="row">
+<!-- page-title start -->
+<!-- ================ -->
+<h1 class="page-title text-center">Nos services</h1>
+<div class="separator"></div>
+<br>
+</div>
+<div class="row">
+<!-- page-title end -->
+{% for service in site.services %}
+	<div class="col-sm-4">
+		<div class="image-box style-2 mb-20 shadow bordered light-gray-bg text-center">
+			<div class="overlay-container overlay-visible">
+				<img src="{{ service.image }}" alt="" style="width: 360px; height: 215px;">
+				<a href="#" class="overlay-link"><i class="fa fa-link"></i></a>
+				<div class="overlay-bottom hidden-xs">
+					<div class="text">
+						<p class="lead margin-clear text-left">{{ service.title }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="body padding-horizontal-clear">
+				<div style="width: 328px; height: 125px;">
+					<p class="text-justify">{{ service.mini_desc | slice: 0, 210 }}..</p>
+				</div>								
+				<button class="btn btn-default" data-toggle="modal" data-target="#myModal">En savoir plus</button>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	{% assign mod_service_title = service.title %}
+	{% assign mod_service_content = service.content %}
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
+					<h4 class="modal-title" id="myModalLabel">{{ mod_service.title }}</h4>
+				</div>
+				<div class="modal-body">
+					<p>{{ mod_service.content }}</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-sm btn-dark" data-dismiss="modal">Fermer</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+</div>
