@@ -20,6 +20,6 @@ fields:
   label: photo de profil
   default: "/uploads/testimonial-2.jpg"
 pages:
+- _clients/sdft.md
 - _clients/independance-immobilière.md
 - _clients/senelec.md
-- _clients/sdft.md
