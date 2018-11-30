@@ -21,6 +21,5 @@ fields:
   default: "/uploads/testimonial-2.jpg"
 pages:
 - _clients/siad.md
-- _clients/independance-immobilière.md
 - _clients/senelec.md
 - _clients/sdft.md
