@@ -20,6 +20,7 @@ fields:
   label: photo de profil
   default: "/uploads/testimonial-2.jpg"
 pages:
+- _clients/groupe-cdx.md
 - _clients/siad.md
 - _clients/senelec.md
 - _clients/sdft.md
