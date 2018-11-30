@@ -25,16 +25,16 @@ collections:
   clients:
     title: clients
     output: true
-email: contact@kap-expertise.com
+email: info@kap-expertise.com
 tel: 33 821 32 33
-adresse: 22 rue Jules Ferry, Dakar Sénégal
+adresse: 32 rue Jules Ferry, Dakar Sénégal
 description: Pour faire face à un environnement en permanente évolution, nous avons 
   développé au fil du temps une culture d’entreprise assurant des valeurs ayant pour 
   finalité la performance de notre service. 
 meta_description: Pour faire face à un environnement en permanente évolution, nous avons 
   développé au fil du temps une culture d’entreprise assurant des valeurs ayant pour 
   finalité la performance de notre service. 
-logo: /images/logo_kap.png
+logo: /images/logo_kap5.png
 paralax: /uploads/slide-2.jpg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
