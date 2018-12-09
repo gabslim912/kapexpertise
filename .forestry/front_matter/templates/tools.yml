@@ -20,4 +20,5 @@ fields:
   label: image
   default: "/uploads/document.png"
 pages:
+- _outils/régime-de-tva.md
 - _outils/business-plan.md
