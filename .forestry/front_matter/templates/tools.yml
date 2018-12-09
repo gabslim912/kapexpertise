@@ -18,3 +18,4 @@ fields:
 - type: file
   name: image
   label: image
+  default: "/uploads/document.png"
