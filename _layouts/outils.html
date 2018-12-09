@@ -39,7 +39,7 @@ layout: default
 				
 				<p class="lead">Vous pouvez trouver ci-dessous la liste de nos documents téléchargeable</p>
 				<div class="separator"></div>
-				{% for outil in page.outils %}
+				{% for outil in site.outils %}
 				<div class="image-box style-3-b">
 					<div class="row">
 						<div class="col-sm-4 col-md-4 col-lg-3">
@@ -53,10 +53,10 @@ layout: default
 						<div class="col-sm-8 col-md-8 col-lg-9">
 							<div class="body">
 								<h3 class="title"><a href="{{ outil.docpdf }}">{{ outil.name }}</a></h3>
-								<p class="small mb-10"><i class="pl-10 icon-tag-1"></i> {{ outil.type }}</p>
+								<p class="small mb-10"><i class="pl-10 icon-tag-1"></i> {{ outil.label }}</p>
 								<div class="separator-2"></div>
 								<p class="mb-10 text-justify">{{ outil.description }}</p>
-								<a href="{{ outil.docpdf }}" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear" target="blank">Télécharger le document<i class="fa fa-arrow-right pl-10"></i></a>
+								<a href="{{ outil.document }}" target="blank" class="btn btn-default btn-sm btn-hvr hvr-shutter-out-horizontal margin-clear" >Télécharger le document<i class="fa fa-arrow-right pl-10"></i></a>
 							</div>
 						</div>
 					</div>

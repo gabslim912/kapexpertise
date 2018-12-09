@@ -19,6 +19,9 @@ collections:
   services:
     title: services
     output: true
+  outils:
+    title: outils
+    output: true
   partenaires:
     title: partenaires
     output: true
