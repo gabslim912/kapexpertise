@@ -1,5 +1,5 @@
 ---
-title: La notion de période en comptabilité-(copy)
+title: La notion de période en comptabilité
 layout: post
 auteur: Radoine Kréaime
 date: 2018-08-29 21:42:40 +0000
