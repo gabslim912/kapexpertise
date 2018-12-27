@@ -1,27 +1,108 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
-  </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+      <!-- breadcrumb start -->
+      <!-- ================ -->
+      <div class="breadcrumb-container">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><i class="fa fa-home pr-10"></i><a href="i/">Accueil</a></li>
+            <li class="active">{{ page.title }}</li>
+          </ol>
+        </div>
+      </div>
+      <!-- breadcrumb end -->
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+      <!-- main-container start -->
+      <!-- ================ -->
+      <section class="main-container">
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+        <div class="container">
+          <div class="row">
+
+            <!-- main start -->
+            <!-- ================ -->
+            <div class="main col-md-8">
+
+              <!-- page-title start -->
+              <!-- ================ -->
+              <h1 class="page-title">{{ page.title }}</h1>
+              <!-- page-title end -->
+
+              <!-- blogpost start -->
+              <!-- ================ -->
+              <article class="blogpost full">
+                <header>
+                  <div class="post-info">
+                    <span class="post-date">
+                      <i class="icon-calendar"></i>
+                      <span class="day">{{ page.date }}</span>
+                      
+                    </span>
+                    <span class="submitted"><i class="icon-user-1"></i> {{ page.auteur }}</span>
+                    
+                  </div>
+                </header>
+                <div class="blogpost-content">
+                  <div class="overlay-container">
+                        <img src="{{ page.image }}" alt="{{ page.title }}">
+                          <a class="overlay-link popup-img" href="{{ page.image }}"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                  <p>{{ page.content }}</p>
+                </div>
+              </article>
+              <!-- blogpost end -->
+              <!-- comments form start -->
+              <!-- ================ -->
+              <div class="comments-form">
+                <h2 class="title">Ajouter un commentaire</h2>
+                <div class="fb-comments" data-href="{{ page.url | absolute_url  }}" data-width="750" data-numposts="5"></div>
+              </div>
+              <!-- comments form end -->
+            </div>
+            <!-- main end -->
+
+            <!-- sidebar start -->
+            <!-- ================ -->
+            <aside class="col-md-4 col-lg-3 col-lg-offset-1">
+              <div class="sidebar">
+                <div class="block clearfix">
+                  <h3 class="title">Citation du jour</h3>
+                  <div class="separator-2"></div>
+                  <blockquote class="margin-clear">
+                    <p>Un comptable compétent annonce la veille ce que les économistes prévoient le jour même pour le lendemain.</p>  
+                    <footer><cite title="Source Title">Miles Thomas </cite></footer>
+                  </blockquote>
+                </div>
+                <div class="block clearfix">
+                  <h3 class="title">Derniers articles</h3>
+                  <div class="separator-2"></div>
+                  {% for post in site.posts limit: 3 %}
+                  <div class="media margin-clear">
+                    <div class="media-left">
+                      <div class="overlay-container">
+                        <img class="media-object" src="{{ post.image }}" alt="{{ post.title }}">
+                        <a href="{{ post.url }}" class="overlay-link small"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading"><a href="{{ post.url }}">{{ post.title }}...</a></h6>
+                      <p class="small margin-clear"><i class="fa fa-calendar pr-10"></i>{{ post.date }}</p>
+                    </div>
+                    <hr>
+                  </div>
+                  {% endfor %}
+                  <div class="text-right space-top">
+                    <a href="/blog" class="link-dark"><i class="fa fa-plus-circle pl-5 pr-5"></i>Voir plus</a> 
+                  </div>
+                </div>              
+              </div>
+            </aside>
+            <!-- sidebar end -->
+
+          </div>
+        </div>
+      </section>
+      <!-- main-container end -->

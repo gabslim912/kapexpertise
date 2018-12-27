@@ -16,6 +16,9 @@
 # in the templates via {{ site.myvariable }}.
 title: KAP EXPERTISE 
 collections:
+  posts:
+    title: Posts
+    output: true
   services:
     title: services
     output: true

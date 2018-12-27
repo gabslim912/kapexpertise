@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<!-- breadcrumb start -->
+<!-- ================ -->
+<div class="breadcrumb-container">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><i class="fa fa-home pr-10"></i><a href="/">Home</a></li>
+			<li class="active">Blog</li>
+		</ol>
+	</div>
+</div>
+<!-- breadcrumb end -->
+
+<!-- main-container start -->
+<!-- ================ -->
+
+			<!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<h1 class="page-title">LES ARTICLES</h1>
+							<div class="separator-2"></div>
+							<!-- page-title end -->
+
+							{% for post in site.posts %}
+							<!-- blogpost start -->
+							<article class="blogpost">
+								<div class="row grid-space-10">
+									<div class="col-md-6">
+										<div class="overlay-container">
+											<img src="{{ post.image }}" alt="{{ post.title }}">
+											<a class="overlay-link" href="{{ post.url }}"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<header>
+											<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+											<div class="post-info">
+												<span class="post-date">
+													<i class="icon-calendar"></i>
+													<span class="day">{{ post.date }}</span>
+												</span>
+												<span class="submitted"><i class="icon-user-1"></i> {{ post.auteur }}</span>
+											</div>
+										</header>
+										<div class="blogpost-content">
+											<p>{{ post.content }}</p>
+										</div>
+									</div>
+								</div>
+								<!--<footer class="clearfix">
+									<div class="tags pull-left"><i class="icon-tags"></i> <a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">long tag 3</a></div>
+									<div class="link pull-right"><i class="icon-link"></i><a href="#">Voir plus</a></div>
+								</footer>-->
+							</article>
+							<!-- blogpost end -->
+							{% endfor %}
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+<!-- main-container end -->
