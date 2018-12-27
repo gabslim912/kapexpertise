@@ -1,6 +1,6 @@
 ---
 title: Comptabilisation C3S
-layout: ''
+layout: post
 auteur: Radoine Kréaime
 mini_desc: La contribution sociale de solidarité des entreprises ou C3S est une taxe
   assise sur le chiffre d’affaires déclaré. Elle est due par les sociétés commerciales
