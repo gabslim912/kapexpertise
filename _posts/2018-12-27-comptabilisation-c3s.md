@@ -5,7 +5,10 @@ auteur: Radoine Kréaime
 mini_desc: La contribution sociale de solidarité des entreprises ou C3S est une taxe
   assise sur le chiffre d’affaires déclaré. Elle est due par les sociétés commerciales
   et par certains groupements existant au 1er janvier de l’année au titre de laquelle
-  elle est due
+  elle est due. Cette taxe est déclarée et payée au plus tard le 15 mai n+1, sur la
+  base du chiffre d’affaires réalisé au titre de l’année civile précédente au taux
+  de 0,16%. Les sociétés dont le chiffre d’affaires est inférieur à 19 millions d’euros
+  sont exonérées de cette taxe.
 image: "/uploads/compta_3s.jpg"
 document: ''
 date: 2018-12-27 03:25:16 +0000
