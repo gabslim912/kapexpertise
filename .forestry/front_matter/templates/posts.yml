@@ -1,7 +1,7 @@
 ---
-label: posts
-hide_body: 
-is_partial: 
+label: Posts
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -12,24 +12,20 @@ fields:
   label: Layout
   type: text
   hidden: false
-  default: ''
+  default: post
 - name: auteur
   label: Auteur
   type: text
   hidden: false
-  default: ''
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
+  default: La redaction
 - name: mini_desc
   label: Mini desc
   type: textarea
   hidden: false
   default: ''
-- name: image
-  label: Image
-  type: text
-  hidden: false
-  default: ''
+- type: file
+  name: image
+  label: image
+- type: file
+  name: document
+  label: Document Pdf
