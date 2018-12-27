@@ -29,5 +29,3 @@ fields:
 - type: file
   name: document
   label: Document Pdf
-pages:
-- _posts/comptabilisation-c3s.md
