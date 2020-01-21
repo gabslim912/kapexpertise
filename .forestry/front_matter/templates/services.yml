@@ -1,7 +1,6 @@
 ---
 label: Services
 hide_body: false
-is_partial: false
 fields:
 - type: textarea
   name: mini_desc
@@ -10,12 +9,12 @@ fields:
   name: image
   label: image
 pages:
-- _services/expertise-comptable.md
-- _services/commissariat-aux-comptes.md
-- _services/missions-sociales.md
-- _services/missions-d-organisation.md
-- _services/formation-et-de-sensibilisation.md
 - _services/audit.md
+- _services/commissariat-aux-comptes.md
 - _services/conseil-en-gestion.md
+- _services/expertise-comptable.md
+- _services/formation-et-de-sensibilisation.md
 - _services/juridique-et-fiscal.md
+- _services/missions-d-organisation.md
+- _services/missions-sociales.md
 - _services/piece-moteur.md

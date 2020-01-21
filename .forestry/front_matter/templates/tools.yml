@@ -1,24 +1,22 @@
 ---
 label: Tools
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: name
   label: Nom du document
 - type: text
   name: label
-  label: label
+  label: Label
 - type: textarea
   name: description
-  label: description
+  label: Description
 - type: file
   name: document
-  label: document
+  label: Document
 - type: file
   name: image
-  label: image
+  label: Image
   default: "/uploads/document.png"
 pages:
-- _outils/régime-de-tva.md
-- _outils/business-plan.md
+- _outils/fgdhjdjfh.md
